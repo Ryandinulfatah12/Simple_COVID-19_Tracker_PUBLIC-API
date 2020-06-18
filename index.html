@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <title>COVID-19 STATISTICS</title>
+  </head>
+  <body>
+
+    <div class="container p-4">
+      <h1 class="text-bold text-center">Kasus COVID-19 di Negara Kita</h1>
+      <div id="negara"></div>
+      <div class="row b-5">
+        <div class="col-md-6 pt-4">
+            <div class="card bg-primary">
+              <div class="card-body">
+                <div class="emot">
+                  <img src="src/img/icon/confimed.png" class="img-fluid float-right">
+                </div>
+                <h4 class="card-title">Terkonfirmasi</h4>
+                <div id="terkonfirmasi">0</div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 pt-4">
+            <div class="card bg-success">
+              <div class="card-body">
+                <div class="emot">
+                  <img src="src/img/icon/sembuh.png" class="img-fluid float-right">
+                </div>
+                <h4 class="card-title">Sembuh</h4>
+                <div id="sembuh">0</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 pt-4">
+            <div class="card bg-warning">
+              <div class="card-body">
+                <div class="emot">
+                  <img src="src/img/icon/active.png" class="img-fluid float-right">
+                </div>
+                <h4 class="card-title">Kasus Aktif</h4>
+                <div id="aktif">0</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 pt-4">
+            <div class="card bg-danger">
+              <div class="card-body">
+                <div class="emot">
+                  <img src="src/img/icon/cry.png" class="img-fluid float-right">
+                </div>
+                <h4 class="card-title">Meninggal</h4>
+                <div id="meninggal">0</div>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <h1 class="mt-4 mb-4 text-center">KASUS DI SELURUH DUNIA</h1>
+      <div class="row">
+        <div class="col-md-4 pb-4">
+          <div class="card brd">
+              <div class="card-body">
+                <div class="emot">
+                  <img src="src/img/icon/confimed.png" class="img-fluid float-right">
+                </div>
+                <h4 class="card-title text-dark">Terkonfirmasi</h4>
+                <div id="positive" class="text-dark">0</div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 pb-4">
+          <div class="card brd">
+              <div class="card-body">
+                <div class="emot">
+                  <img src="src/img/icon/sembuh.png" class="img-fluid float-right">
+                </div>
+                <h4 class="card-title text-dark">Sembuh</h4>
+                <div id="recovered" class="text-dark">0</div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-4 pb-4">
+          <div class="card brd">
+              <div class="card-body">
+                <div class="emot">
+                  <img src="src/img/icon/cry.png" class="img-fluid float-right">
+                </div>
+                <h4 class="card-title text-dark">Meninggal</h4>
+                <div id="death" class="text-dark">0</div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-outline-dark mt-4" data-toggle="modal" data-target="#staticBackdrop">
+        Hentikan Penyebaran Wabah
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="staticBackdropLabel"><strong>Mari Bersama Mencegah Penyebaran Wabah COVID-19</strong></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body justify-content-center">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-4">
+                    <img src="src/img/wash_hands.svg">
+                    <p>Usahakan untuk mengikuti langkah mencuci tangan yang baik dan benar. Terlalu terburu-buru saat mencuci tangan tidak akan menghilangkan kuman dan virus secara menyeluruh. Apabila air mengalir dan sabun tidak tersedia, Anda menggunakan hand sanitizer untuk berjaga-jaga.</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="src/img/care.svg">
+                    <p>Kadar mineral yang Anda butuhkan seperti selenium, zinc, dan zat besi. Selenium menjaga kekuatan sel dan mencegah kerusakan DNA. Lalu zinc memicu respons kekebalan tubuh. Selain itu, zat besi membantu penyerapan vitamin C.</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="src/img/research.svg">
+                    <p>Untuk mencegah infeksi virus ini, Anda dapat menerapkan perilaku hidup bersih dan sehat (PHBS). Anda dapat mengonsumsi makanan bergizi untuk mempertahankan sistem imun Anda.</p>
+                  </div>
+
+                  <div class="col-md-4">
+                    <img src="src/img/social_dist.svg">
+                    <p>Social distance atau social distancing adalah masyarakat diminta untuk menghindari hadir di pertemuan besar atau kerumunan orang. Jika Anda harus berada di sekitar orang, jaga jarak dengan orang lain sekitar 6 kaki (2 meter).</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-dark" data-dismiss="modal">Siap Laksanakan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
